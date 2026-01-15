@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #4f46e5;
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(135deg,#4f46e5,#06b6d4);
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn.small {
+  padding: 10px 22px;
+}
+
+.btn.white {
+  background: #fff;
+  color: #4f46e5;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 10%;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #4f46e5;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 10%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* PRICING */
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+
+.price-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.price-card.highlight {
+  border: 3px solid #4f46e5;
+}
+
+.price-card h3 {
+  font-size: 36px;
+  color: #4f46e5;
+  margin: 10px 0;
+}
+
+/* FAQ */
+.faq {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg,#4f46e5,#06b6d4);
+  color: #fff;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #0f172a;
+  color: #fff;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
